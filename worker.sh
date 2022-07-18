@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Starting RKE2 worker install script"
 
-s3_path="s3://nts3test"
+s3_path="s3://nts3test2"
 
 echo "installing awscli"
 sudo apt update

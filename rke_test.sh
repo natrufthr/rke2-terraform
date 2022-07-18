@@ -1,6 +1,6 @@
 #!/bin/bash
 
-s3_path="s3://nts3test"
+s3_path="s3://nts3test2"
 
 pwd=$(pwd)
 
