@@ -22,14 +22,16 @@ resource "aws_iam_instance_profile" "test_profile" {
 
 resource "aws_instance" "master" {
   ami           = data.aws_ami.ubuntu.id
-  instance_type = "t2.large"
+  instance_type = var.ec2_instance_type
 
   tags = {
-    Name = "nathan-tf-test-master"
+    Name = "${var.node_name_prefix}-tf-test-master"
   }
   user_data = filebase64("${path.module}/master.sh")
   
   iam_instance_profile = "${aws_iam_instance_profile.test_profile.name}"
+
+  vpc_security_group_ids = [var.security_group_id]
 }
 
 output "master_ip_addr" {
