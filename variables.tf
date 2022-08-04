@@ -10,3 +10,6 @@ variable "ec2_instance_type" {
         default = "t2.large"
 }
 
+variable "s3_bucket_name" {}
+
+variable "instance_profile_name" {}
