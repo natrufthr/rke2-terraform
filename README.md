@@ -15,8 +15,4 @@
   - Uses worker.sh as bootstrap script when instance is starting up
 
 - rke_test.sh
-<<<<<<< HEAD
   - Pulls rke2.yaml from s3 bucket and runs test kubectl command on nodes
-=======
-  - Pulls rke2.yaml from s3 bucket and runs test kubectl command on nodes
->>>>>>> ab4fb1160caa295edc54c94a13ee00dd685df9ec
